@@ -1,6 +1,9 @@
 {
   "name": "firebase-auth-forgot-pass",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18 <19"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,6 +17,7 @@
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
+    "@angular/fire": "^16.0.0",
     "@angular/forms": "^16.2.0",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",

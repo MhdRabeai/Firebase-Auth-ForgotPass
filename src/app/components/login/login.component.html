@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col">
+      <div class="col-4">
+        <div class="card card-shadow">
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <h4>Login</h4>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address :</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  [(ngModel)]="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPass1" class="form-label"
+                  >Password :</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="exampleInputPass1"
+                  aria-describedby="passHelp"
+                  [(ngModel)]="password"
+                />
+              </div>
+              <div class="btns text-center">
+                <button class="btn btn-primary" (click)="login()">Login</button>
+              </div>
+              <div class="row mt-4">
+                <div class="col-7">
+                  <a class="text-dark text-decoration-none"
+                    >Do Not Have An Account?
+                    <span
+                      class="text-danger"
+                      [routerLink]="['/signup']"
+                      style="cursor: pointer"
+                      >SingUp Here</span
+                    ></a
+                  >
+                </div>
+                <div class="col-5">
+                  <a
+                    class="text-dark text-decoration-none"
+                    [routerLink]="['/forgot-pass']"
+                    style="cursor: pointer"
+                    >Forgot Password?
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
